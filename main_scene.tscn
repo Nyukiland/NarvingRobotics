@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://btxda8l0cq4dc"]
+[gd_scene load_steps=4 format=3 uid="uid://btxda8l0cq4dc"]
+
+[ext_resource type="Script" path="res://script/RotateCam.gd" id="1_envv8"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vvl0t"]
 
@@ -13,6 +15,7 @@ mesh = SubResource("BoxMesh_vvl0t")
 [node name="PivotCam" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.0707107, 0, 0.0707107, 0, 1, 0, -0.0707107, 0, 0.0707107, -0.00416994, 0.332178, 0.000229359)
 mesh = SubResource("CylinderMesh_bw4m6")
+script = ExtResource("1_envv8")
 
 [node name="Camera3D" type="Camera3D" parent="PivotCam"]
 transform = Transform3D(10, 0, 0, 0, 0.892405, 0.451235, 0, -4.51235, 8.92405, 0, 2.9589, 61.8213)

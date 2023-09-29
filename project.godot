@@ -13,3 +13,16 @@ config_version=5
 config/name="Narving_Robotics"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[input]
+
+RotateCamLeft={
+"deadzone": 0.5,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":9,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+RotateCamRight={
+"deadzone": 0.5,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":10,"pressure":0.0,"pressed":true,"script":null)
+]
+}

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ds5ct47aoklbg"
-path="res://.godot/imported/PititRobotBallI.glb-4f1183c3d1de16bf5624ef36cf6a1a0f.scn"
+uid="uid://5r1h0a66tk33"
+path="res://.godot/imported/PititRobotBallIdle.glb-484f0ec6ca2814b5dc7f618d39e46743.scn"
 
 [deps]
 
-source_file="res://PititRobotBallI.glb"
-dest_files=["res://.godot/imported/PititRobotBallI.glb-4f1183c3d1de16bf5624ef36cf6a1a0f.scn"]
+source_file="res://3d/PititRobotBallIdle.glb"
+dest_files=["res://.godot/imported/PititRobotBallIdle.glb-484f0ec6ca2814b5dc7f618d39e46743.scn"]
 
 [params]
 

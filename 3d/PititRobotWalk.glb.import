@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ky2ytmnpeq5"
-path="res://.godot/imported/PititRobotWalk.glb-be3fbe982474e8a56e23969fbb232e9c.scn"
+path="res://.godot/imported/PititRobotWalk.glb-1e343467c97c2691c0a73e9ddcabe71e.scn"
 
 [deps]
 
-source_file="res://PititRobotWalk.glb"
-dest_files=["res://.godot/imported/PititRobotWalk.glb-be3fbe982474e8a56e23969fbb232e9c.scn"]
+source_file="res://3d/PititRobotWalk.glb"
+dest_files=["res://.godot/imported/PititRobotWalk.glb-1e343467c97c2691c0a73e9ddcabe71e.scn"]
 
 [params]
 
