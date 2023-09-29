@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://btxda8l0cq4dc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vvl0t"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_bw4m6"]
+
+[node name="MainScene" type="Node3D"]
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 5, 0, 0, 0, 3, 0.0103998, -2.49115, 0.00515842)
+mesh = SubResource("BoxMesh_vvl0t")
+
+[node name="PivotCam" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0707107, 0, 0.0707107, 0, 1, 0, -0.0707107, 0, 0.0707107, -0.00416994, 0.332178, 0.000229359)
+mesh = SubResource("CylinderMesh_bw4m6")
+
+[node name="Camera3D" type="Camera3D" parent="PivotCam"]
+transform = Transform3D(10, 0, 0, 0, 0.892405, 0.451235, 0, -4.51235, 8.92405, 0, 2.9589, 61.8213)
+projection = 1
+size = 3.02683
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="PivotCam/Camera3D"]
+transform = Transform3D(1, 4.20427e-05, 0.000136613, -4.20726e-05, 1, 0.000219335, -0.000136604, -0.000219341, 1, 0, 0, 0)
