@@ -1,10 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://btxda8l0cq4dc"]
+[gd_scene load_steps=6 format=3 uid="uid://btxda8l0cq4dc"]
 
 [ext_resource type="Script" path="res://script/RotateCam.gd" id="1_envv8"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vvl0t"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_bw4m6"]
+
+[sub_resource type="Sky" id="Sky_o87aw"]
+
+[sub_resource type="Environment" id="Environment_myxbj"]
+sky = SubResource("Sky_o87aw")
+ambient_light_source = 3
+ambient_light_color = Color(0.368627, 0.513726, 0.87451, 1)
+reflected_light_source = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.490196, 0.564706, 0.596078, 1)
+fog_density = 0.0618
 
 [node name="MainScene" type="Node3D"]
 
@@ -13,14 +25,17 @@ transform = Transform3D(3, 0, 0, 0, 5, 0, 0, 0, 3, 0.0103998, -2.49115, 0.005158
 mesh = SubResource("BoxMesh_vvl0t")
 
 [node name="PivotCam" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.0707107, 0, 0.0707107, 0, 1, 0, -0.0707107, 0, 0.0707107, -0.00416994, 0.332178, 0.000229359)
+transform = Transform3D(0.0707107, 0, 0.0707107, 0, 1, 0, -0.0707107, 0, 0.0707107, 0, 0.819607, 0)
 mesh = SubResource("CylinderMesh_bw4m6")
 script = ExtResource("1_envv8")
 
 [node name="Camera3D" type="Camera3D" parent="PivotCam"]
 transform = Transform3D(10, 0, 0, 0, 0.892405, 0.451235, 0, -4.51235, 8.92405, 0, 2.9589, 61.8213)
 projection = 1
-size = 3.02683
+size = 4.06152
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="PivotCam/Camera3D"]
 transform = Transform3D(1, 4.20427e-05, 0.000136613, -4.20726e-05, 1, 0.000219335, -0.000136604, -0.000219341, 1, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_myxbj")

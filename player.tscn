@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://btn2uo03ml3ku"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_v3ar2"]
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_v3ar2")
+
+[node name="Node3D" type="Node3D" parent="."]
