@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 var robot_node
 
-var SPEED = 5.0
+var SPEED = 1.0
 
 var animBallSpeed = 10.0
 var targetBallState = 0.0
